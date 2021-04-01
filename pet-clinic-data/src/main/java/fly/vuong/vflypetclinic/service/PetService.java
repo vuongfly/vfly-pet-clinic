@@ -4,6 +4,5 @@ import fly.vuong.vflypetclinic.model.Pet;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Service;
 
-@Service
-public interface PetService extends JpaRepository<Pet, Long> {
+public interface PetService{
 }

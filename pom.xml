@@ -40,12 +40,20 @@
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-release-plugin</artifactId>
-                <!--<version></version>-->
+                <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-                    <goal>install</goal>
+                    <source>1.8</source>
+                    <target>1.8</target>
                 </configuration>
             </plugin>
+<!--            <plugin>-->
+<!--                <groupId>org.apache.maven.plugins</groupId>-->
+<!--                <artifactId>maven-release-plugin</artifactId>-->
+<!--                &lt;!&ndash;<version></version>&ndash;&gt;-->
+<!--                <configuration>-->
+<!--                    <goal>install</goal>-->
+<!--                </configuration>-->
+<!--            </plugin>-->
         </plugins>
     </build>
 
