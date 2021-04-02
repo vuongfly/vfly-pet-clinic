@@ -1,8 +1,12 @@
 package fly.vuong.vflypetclinic.model;
 
 import lombok.Data;
-import org.springframework.stereotype.Component;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-@Data
+@Setter
+@Getter
+@NoArgsConstructor
 public class Owner extends Person{
 }
