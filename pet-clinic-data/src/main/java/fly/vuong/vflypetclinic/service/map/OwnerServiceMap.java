@@ -1,4 +1,4 @@
-package fly.vuong.vflypetclinic.service.jpaIpml;
+package fly.vuong.vflypetclinic.service.map;
 
 import fly.vuong.vflypetclinic.model.Owner;
 import fly.vuong.vflypetclinic.service.OwnerService;
@@ -9,32 +9,32 @@ import java.util.List;
 import java.util.Set;
 
 @Service
-@Profile("jpa")
-public class OwnerServiceJpaImpl implements OwnerService {
+@Profile("map")
+public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
 
     @Override
     public Set<Owner> findAll() {
-        return null;
-    }
-
-    @Override
-    public Owner findById(Long id) {
-        return null;
-    }
-
-    @Override
-    public Owner save(Owner obj) {
-        return null;
-    }
-
-    @Override
-    public void delete(Owner object) {
-
+        return super.findAll();
     }
 
     @Override
     public void deleteById(Long id) {
+        super.deleteById(id);
+    }
 
+    @Override
+    public void delete(Owner object) {
+        super.delete(object);
+    }
+
+    @Override
+    public Owner save(Owner object) {
+        return super.save(object);
+    }
+
+    @Override
+    public Owner findById(Long id) {
+        return super.findById(id);
     }
 
     @Override
