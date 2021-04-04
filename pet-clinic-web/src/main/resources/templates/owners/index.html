@@ -8,5 +8,18 @@
 
     <h1 th:text="'List of Owners'">Owner index</h1>
 
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Firstname</th>
+            <th>Lastname</th>
+        </tr>
+        <tr th:each="owner : ${owners}">
+            <td th:text="${owner.getId()}"> Id </td>
+            <td th:text="${owner.getFirstName()}"> First Name </td>
+            <td th:text="${owner.getLastName()}"> Last Name </td>
+        </tr>
+    </table>
+
 </body>
 </html>
