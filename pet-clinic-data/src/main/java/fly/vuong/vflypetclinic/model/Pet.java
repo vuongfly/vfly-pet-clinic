@@ -3,11 +3,9 @@ package fly.vuong.vflypetclinic.model;
 import lombok.Data;
 import org.springframework.stereotype.Component;
 
-import javax.persistence.Entity;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.time.LocalDate;
+import java.util.Set;
 
 @Data
 @Entity
@@ -23,4 +21,7 @@ public class Pet extends BaseEntity {
     private Owner owner;
 
     private LocalDate birthDate;
+
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "pet")
+    private Set<Visit> visits;
 }
