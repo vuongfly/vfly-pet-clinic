@@ -35,8 +35,6 @@ public class OwnerServiceJpaImpl implements OwnerService {
 
         ownerRepo.findAll().forEach(owners::add);
 
-//        ownerRepo.findAll().forEach(owners::add);
-
         return owners;
     }
 
