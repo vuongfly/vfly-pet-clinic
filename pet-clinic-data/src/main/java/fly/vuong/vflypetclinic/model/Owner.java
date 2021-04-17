@@ -20,6 +20,7 @@ import java.util.Set;
 
 @Entity
 @Table(name = "owners")
+@Data
 public class Owner extends Person{
     private String address;
     private String city;
