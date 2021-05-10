@@ -1,13 +1,17 @@
 package fly.vuong.vflypetclinic.model;
 
-import lombok.Data;
+import lombok.*;
 import org.springframework.stereotype.Component;
 
 import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
 
-@Data
+
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
 @Entity
 @Table(name = "vets")
 public class Vet extends Person {

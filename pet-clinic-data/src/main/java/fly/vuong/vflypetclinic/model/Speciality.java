@@ -1,13 +1,17 @@
 package fly.vuong.vflypetclinic.model;
 
-import lombok.Data;
+import lombok.*;
 
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
 @Entity
 @Table(name = "specialities")
-@Data
+
 public class Speciality extends BaseEntity{
     private String description;
 }

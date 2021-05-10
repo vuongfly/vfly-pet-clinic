@@ -1,9 +1,6 @@
 package fly.vuong.vflypetclinic.model;
 
-import lombok.Data;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 import org.springframework.stereotype.Component;
 
 import javax.persistence.CascadeType;
@@ -20,7 +17,6 @@ import java.util.Set;
 
 @Entity
 @Table(name = "owners")
-@Data
 public class Owner extends Person{
     private String address;
     private String city;

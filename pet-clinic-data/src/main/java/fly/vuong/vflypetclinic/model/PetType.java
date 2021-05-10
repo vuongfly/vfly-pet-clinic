@@ -1,12 +1,16 @@
 package fly.vuong.vflypetclinic.model;
 
-import lombok.Data;
+import lombok.*;
 import org.springframework.stereotype.Component;
 
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
-@Data
+
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
 @Entity
 @Table(name = "types")
 public class PetType extends BaseEntity{

@@ -1,12 +1,15 @@
 package fly.vuong.vflypetclinic.model;
 
-import lombok.Data;
+import lombok.*;
 import org.springframework.stereotype.Component;
 
 import javax.persistence.Column;
 import javax.persistence.MappedSuperclass;
 
-@Data
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
 @MappedSuperclass
 public class Person extends BaseEntity {
     @Column(name = "last_name")
