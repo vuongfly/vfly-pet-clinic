@@ -16,4 +16,4 @@ List vest: http://localhost:8080/vets
 
 List owner: http://localhost:8080/owner
 
-This project is done yet.
+This project is not done yet.
